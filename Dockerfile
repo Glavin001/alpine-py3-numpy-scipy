@@ -6,4 +6,7 @@ RUN apk add --update --no-cache ca-certificates gcc g++ curl openblas-dev@commun
 
 RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
-RUN pip install --no-cache-dir --disable-pip-version-check numpy==1.11.0 scipy==0.18.0 scikit-learn==0.18.1
+RUN pip install --no-cache-dir --disable-pip-version-check \
+	numpy==1.13.0rc1 \
+	scipy==0.19.0 \
+	scikit-learn==0.18.1
