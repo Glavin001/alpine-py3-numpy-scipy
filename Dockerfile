@@ -1,4 +1,4 @@
-FROM python:3.5-alpine
+FROM python:2.7-alpine
 
 RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 
@@ -6,4 +6,4 @@ RUN apk add --update --no-cache ca-certificates gcc g++ curl openblas-dev@commun
 
 RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
-RUN pip3 install --no-cache-dir --disable-pip-version-check numpy==1.11.0 scipy==0.18.0 scikit-learn==0.18.1
+RUN pip install --no-cache-dir --disable-pip-version-check numpy==1.11.0 scipy==0.18.0 scikit-learn==0.18.1
