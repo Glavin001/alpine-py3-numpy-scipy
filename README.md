@@ -4,7 +4,7 @@
 - python:2.7-alpine
 - numpy 1.13.0rc1
 - scipy 0.19.0
-- scikit-learn 0.18.1
+- scikit-learn 0.17.1
 
 ## Prebuilt Image
 
