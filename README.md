@@ -1,7 +1,8 @@
-# Docker image for Python 2.7 + Numpy + Scipy + Scikit-Learn
+# Docker image for Node 7 + Python 2.7 + Numpy + Scipy + Scikit-Learn
 
 ## About
-- python:2.7-alpine
+- [node:7-alpine](https://hub.docker.com/_/node/)
+- [python 2.7](https://pkgs.alpinelinux.org/package/v3.3/main/armhf/python)
 - numpy 1.13.0rc1
 - scipy 0.19.0
 - scikit-learn 0.17.1

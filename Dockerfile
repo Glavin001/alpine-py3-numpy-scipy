@@ -1,4 +1,12 @@
-FROM python:2.7-alpine
+FROM node:7-alpine
+
+RUN apk update
+RUN apk add python python-dev py-pip build-base
+
+RUN node --version && \
+	npm --version && \
+	python --version && \
+	pip --version
 
 RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 
